@@ -1,0 +1,23 @@
+meta {
+  name: Register
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://127.0.0.1:5000/api/auth/registration
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "login": "niken",
+    "password": "123456789"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

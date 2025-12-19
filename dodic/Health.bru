@@ -1,0 +1,16 @@
+meta {
+  name: Health
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://127.0.0.1:5000/api/health_check
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
