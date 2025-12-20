@@ -13,10 +13,10 @@ if not exist ".venv" (
 )
 
 REM Start backend in a new window (keeps window open on exit)
-start "DODIK Backend" cmd /k "cd /d %~dp0 && .venv\Scripts\python.exe -u backend\run.py"
+start "OK Backend" cmd /k "cd /d %~dp0 && .venv\Scripts\python.exe -u backend\run.py"
 
 REM Start frontend in a new window (keeps window open on exit)
-start "DODIK Frontend" cmd /k "cd /d "%~dp0frontend" & npm run dev"
+start "OK Frontend" cmd /k "cd /d "%~dp0frontend" & npm run dev"
 
 popd
 exit /b 0
